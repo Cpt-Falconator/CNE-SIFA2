@@ -1,9 +1,8 @@
 pipeline{
         agent any
-        }   
         stages{
             stage('Testing'){
-                environment{
+                environment(
                         DATABASE_URI=credentials('DATABASE_URI')
                         SECRET_KEY=credentials('SECRET_KEY')
                         TEST_DATABASE_URI=credentials('TEST_DATABASE_URI')
@@ -12,6 +11,7 @@ pipeline{
                         D_DB_USERNAME=credentials('D_DB_USERNAME')
                         D_DB_END=credentials('D_DB_END')
                         DB_PASSWORD=credentials('DB_PASSWORD')
+                }
                 steps{
                     sh 'sudo bash ./scripts/test_scripts.sh'
                 }
