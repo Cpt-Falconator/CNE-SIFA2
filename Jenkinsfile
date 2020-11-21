@@ -1,11 +1,9 @@
 pipeline{
         agent any
-        environment {
-        }
         stages{
             stage('Testing'){
                 steps{
-                    sudo rm -r CNE_SIFA2/
+                    rm -r CNE_SIFA2/
                     git clone 'https://github.com/Cpt-Falconator/CNE-SIFA2.git'
                     cd CNE-SIFA2/
                     mysql -h testing-db.c3up5hij9k9x.eu-west-1.rds.amazonaws.com -P 3306 -u FalconTest -pMWAMDATABASE < database/Create.sql
