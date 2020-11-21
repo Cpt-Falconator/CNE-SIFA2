@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('Testing'){
                 steps{
-                    sh 'sudo ./scripts/test_scripts.sh'
+                    sh 'sudo bash ./scripts/test_scripts.sh'
                 }
             }
         }
