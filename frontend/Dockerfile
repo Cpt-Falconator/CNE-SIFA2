@@ -1,5 +1,3 @@
-15 lines (14 sloc)  330 Bytes
-  
 FROM python:3.6
 # Install apt dependencies
 WORKDIR /files
