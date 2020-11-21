@@ -8,7 +8,7 @@ pipeline{
                 }
             stage('Pushing builds to docker'){
                 steps{
-                        sh 'bash ./scripts/docker_push.sh'
+                        sh 'sudo bash ./scripts/docker_push.sh'
                         }
                 }
         }
