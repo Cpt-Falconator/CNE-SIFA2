@@ -8,4 +8,5 @@ docker-compose up -d --build
 docker exec backend bash -c "pytest tests/ --cov application"
 docker exec frontend bash -c "pytest tests/ --cov application"
 docker-compose down
+cd ..
 rm -r CNE-SIFA2/
