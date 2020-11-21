@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -f CNE-SIFA2/
 git clone "https://github.com/Cpt-Falconator/CNE-SIFA2.git"
 cd CNE-SIFA2/
 mysql -h ${T_DB_END} -P 3306 -u ${T_DB_USERNAME} -p${T_DB_PASSWORD} < database/Create.sql
