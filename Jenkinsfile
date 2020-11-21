@@ -1,5 +1,10 @@
 pipeline{
         agent any
+        environment{
+                DATABASE_URI=$(DATABASE_URI)
+                SECRET_KEY=$(SECRET_KEY)
+                TEST_DATABASE_URI=$(TEST_DATABASE_URI)
+        }
         stages{
             stage('Testing'){
                 steps{
