@@ -12,6 +12,7 @@ pipeline{
                 }
             stage('Pushing builds to docker'){
                 steps{
+                        sh 'sudo docker login --username=${DOCKER_USER} --password=${DOCKER_PASSWORD}'
                         sh 'sudo bash ./scripts/docker_push.sh'
                         }
                 }
