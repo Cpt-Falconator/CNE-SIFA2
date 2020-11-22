@@ -3,13 +3,11 @@ kind: ConfigMap
 metadata: 
   name: nginx-config
   namespace: cneproject
-  lables:
-    Project: Second
 data: 
   default.conf: 
     server {
         listen 80;
         location / {
-            proxy_pass http://flask-app:5000;
+            proxy_pass http://frontend:5000;
         }
     }
