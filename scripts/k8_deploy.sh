@@ -1,8 +1,8 @@
 #!/bin/bash
 cd K8/
 sudo kubectl get svc
-kubectl apply -f namespace.yaml
-kubectl apply -f secrets.yaml
-kubectl apply -f nginx-conf.yaml
-kubectl apply -f load-balancer.yaml -f nginx.yaml -f frontend-cip.yaml -f frontend.yaml -f backend-cip.yaml -f backend.yaml
-kubectl describe service load-balancer -n cneproject
+sudo kubectl apply -f namespace.yaml
+sudo kubectl apply -f secrets.yaml
+sudo kubectl apply -f nginx-conf.yaml
+sudo kubectl apply -f load-balancer.yaml -f nginx.yaml -f frontend-cip.yaml -f frontend.yaml -f backend-cip.yaml -f backend.yaml
+sudo kubectl describe service load-balancer -n cneproject
