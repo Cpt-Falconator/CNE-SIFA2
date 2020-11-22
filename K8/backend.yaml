@@ -18,6 +18,7 @@ spec:
       containers:
       - name: backend
         image: cptfalconator/back_end:latest
+        imagePullPolicy: "Always"
         ports:
         - containerPort: 5001
         env:
