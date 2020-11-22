@@ -10,10 +10,15 @@ pipeline{
                         sh 'sudo bash ./scripts/test_scripts.sh'
                         }
                 }
-            stage('Pushing builds to docker'){
+            stage('Pushing builds to docker.io'){
                 steps{
                         sh 'sudo docker login --username=${DOCKER_USER} --password=${DOCKER_PASSWORD}'
                         sh 'sudo bash ./scripts/docker_push.sh'
+                        }
+                }
+            stage('deploy') {
+                steps {
+                        sh './scripts/k8_deploy.sh'
                         }
                 }
         }
