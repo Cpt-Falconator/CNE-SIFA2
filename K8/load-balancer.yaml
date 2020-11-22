@@ -5,7 +5,7 @@ metadata:
   namespace: cneproject
   labels:
     app: nginx
-    project: Second
+    Project: Second
 spec:
   selector:
     app: nginx
