@@ -5,7 +5,6 @@ metadata:
   namespace: cneproject
   labels: 
     app: nginx
-    Project: Second
 spec:
   replicas: 2
   selector: 
