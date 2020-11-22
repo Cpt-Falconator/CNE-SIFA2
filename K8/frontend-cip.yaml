@@ -4,10 +4,10 @@ metadata:
   name: frontend
   namespace: cneproject
   labels: 
-    app: flask
+    app: frontend
 spec:
   selector: 
-    app: flask
+    app: frontend
   ports:
   - protocol: TCP
     port: 5000
