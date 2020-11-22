@@ -27,15 +27,15 @@ spec:
         - name: DATABASE_URI
           valueFrom:
             secretKeyRef:
-              name: credentials
+              name: execsecrets
               key: DATABASE_URI
         - name: TEST_DATABASE_URI
           valueFrom:
             secretKeyRef:
-              name: credentials
+              name: execsecrets
               key: TEST_DATABASE_URI
-        - name: secret_key
+        - name: SECRET_KEY
           valueFrom:
             secretKeyRef:
-              name: credentials
-              key: secret_key
+              name: execsecrets
+              key: SECRET_KEY
