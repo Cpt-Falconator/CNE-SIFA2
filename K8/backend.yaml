@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  namespace: cneproject
+  labels:
+    app: backend
+    Project: Second
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: backend
+      Project: Second
+  template:
+    metadata:
+      labels:
+        app: backend
+        Project: Second
+    spec:
+      containers:
+      - name: backend
+        image: cptfalconator/back_end
+        ports:
+        - containerPort: 5001
+        env:
+        - name: DATABASE_URI
+          valueFrom:
+            secretKeyRef:
+              name: credentials
+              key: DATABASE_URI
+        - name: TEST_DATABASE_URI
+          valueFrom:
+            secretKeyRef:
+              name: credentials
+              key: TEST_DATABASE_URI
+        - name: secret_key
+          valueFrom:
+            secretKeyRef:
+              name: credentials
+              key: secret_key
