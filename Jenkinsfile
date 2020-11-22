@@ -18,7 +18,7 @@ pipeline{
                 }
             stage('deploy') {
                 steps {
-                        sh 'sudo bash ./scripts/k8_deploy.sh'
+                        sh 'bash ./scripts/k8_deploy.sh'
                         }
                 }
         }
