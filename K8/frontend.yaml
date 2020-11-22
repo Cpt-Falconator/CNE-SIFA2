@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: frontend
+  namespace: cneproject
+  labels: 
+    app: flask
+    Project: Second
+spec: 
+  replicas: 3
+  selector: 
+    matchLabels:
+      app: flask
+      Project: Second
+  template: 
+    metadata: 
+      labels:
+        app: flask
+        Project: Second
+    spec: 
+      containers:
+      - name: frontend
+        image: cptfalconator/front_end:latest
+        ports: 
+        - containerPort: 5000
