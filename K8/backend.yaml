@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: cptfalconator/back_end:latest
+        image: cptfalconator/back_end
         ports:
         - containerPort: 5001
         env:
