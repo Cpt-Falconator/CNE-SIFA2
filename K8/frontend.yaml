@@ -20,6 +20,6 @@ spec:
     spec: 
       containers:
       - name: frontend
-        image: cptfalconator/front_end:latest
+        image: cptfalconator/front_end
         ports: 
         - containerPort: 5000
