@@ -8,6 +8,6 @@ data:
     server {
         listen 80;
         location / {
-            return 200 "Hello from NGINX\n";
+            proxy_pass http://frontend:5000;
         }
     }
