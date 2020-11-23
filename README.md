@@ -84,7 +84,7 @@ I would also like to thank the QA Trainers and my fellow training colleagues for
 
 [gitpoll]: https://i.gyazo.com/4fc026151802f69f598215076e334120.png
 [jenkinssuccess]: https://i.gyazo.com/625eac4e8ae4986d08c67c4bfab76c77.png
-[jenkinspipeline]: https://gyazo.com/c2d2dc949099565fc9c0de0a41739046
+[jenkinspipeline]: https://i.gyazo.com/c2d2dc949099565fc9c0de0a41739046.png
 [502error]: https://i.gyazo.com/f8d16ea04b0eeec5403a4944be7c832b.png
 [500error]: https://i.gyazo.com/5a97629c910fa4bad96a6e9b53ad9e5c.png
 [jiraboard]: https://i.gyazo.com/278b7d2874aa47fd08b8a6dea889797f.png
