@@ -1,13 +1,12 @@
 # SIFA2 Project
 
 ## Repos
-Project Files: https://github.com/Cpt-Falconator/CNE-SIFA2
-Terraform Files: https://github.com/Cpt-Falconator/CNE-Second-Project/tree/Development
-Misc Install Scripts: https://github.com/Cpt-Falconator/Install-scripts
+Project Files: https://github.com/Cpt-Falconator/CNE-SIFA2 <br>
+Terraform Files: https://github.com/Cpt-Falconator/CNE-Second-Project/tree/Development <br>
+Misc Install Scripts: https://github.com/Cpt-Falconator/Install-scripts <br>
 ## Contents
 * [Brief](#brief)
 	* [Requirements](#requirements)
-	* [Solution](#solution)
 * [Planning](#planning)
 	* [Jira Board](#jira-board)
 * [CI Pipeline](#ci-pipeline)
@@ -79,5 +78,5 @@ I would also like to thank the QA Trainers for their assistance and help, as wel
 [jenkinspipeline]: https://i.gyazo.com/c2d2dc949099565fc9c0de0a41739046.png
 [502error]: https://i.gyazo.com/f8d16ea04b0eeec5403a4944be7c832b.png
 [500error]: https://i.gyazo.com/5a97629c910fa4bad96a6e9b53ad9e5c.png
-[jiraboard]: https://i.gyazo.com/b7419c70738340f2efa64e44a6043c51.png
+[jiraboard]: temp.img
 [clustersetup]: temp.img
