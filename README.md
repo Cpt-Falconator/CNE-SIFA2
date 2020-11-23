@@ -41,9 +41,10 @@ Once the tests have passed (_issue here_), it will then build the successful doc
 
 ### Jira Board
 The application was planned and executed alongside a Jira Kanban board, which helped keep track of all the functional requirements and gave a good understanding as to the progress towards MVP, as well as any fuether features and their coreleating priorities.
-Risk Assessment: https://docs.google.com/spreadsheets/d/1xlEVOqXHGN47G9-vtOt0mBowdoz-IZI0lFP09lY-dKg/edit?usp=sharing
 
-![jiraboard][jiraboard]
+![jiraboard][jiraboard] 
+<br>
+Risk Assessment: https://docs.google.com/spreadsheets/d/1xlEVOqXHGN47G9-vtOt0mBowdoz-IZI0lFP09lY-dKg/edit?usp=sharing
 
 ## CI Pipeline
 The application follows a Continous Integration Pipeline, meaning that any changes pushed to git will be automatically tested and (if successful) deploy the changes to the live server without disrupting the user experience.
