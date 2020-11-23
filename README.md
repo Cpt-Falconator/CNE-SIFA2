@@ -61,6 +61,9 @@ A few intermediate steps require SSH'ing onto the JenkinsVM and declaring some e
 ## Future Improvements
 The project as a whole was a failure and did not meet the MVP in a few regards. These are to follow; <br>
 - The tests when through a few issues, firstly it was not achieving full coverage, resulting in a fail, but still a successsful Jenkins build, secondly, failed to even run the tests due to a port binding conflict.
+<br>
+![binderror][binderror]
+<br>
 - Server Error of 500 or 502. The Nginx failed to communicate with the frontend or backend.
 - There were a few "data breaches" resulting in condidential files being pushed to git, these being the database endpoints, username and passwords.
 
@@ -82,6 +85,7 @@ Kubernetes: https://kubernetes.io/ <br>
 
 I would also like to thank the QA Trainers and my fellow training colleagues for their help and support, as well as apologise for my shortcomings.
 
+[binderror]: https://i.gyazo.com/9629b14f9a3d7b57f8fe42e22dfeacce.png
 [gitpoll]: https://i.gyazo.com/4fc026151802f69f598215076e334120.png
 [jenkinssuccess]: https://i.gyazo.com/625eac4e8ae4986d08c67c4bfab76c77.png
 [jenkinspipeline]: https://i.gyazo.com/c2d2dc949099565fc9c0de0a41739046.png
