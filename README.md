@@ -47,6 +47,8 @@ The application was planned and executed alongside a Jira Kanban board, which he
 ## CI Pipeline
 The application follows a Continous Integration Pipeline, meaning that any changes pushed to git will be automatically tested and (if successful) deploy the changes to the live server without disrupting the user experience.
 
+![gitpoll][gitpoll]
+
 (Gif of a jenkins build running : https://gyazo.com/7c964e30c7fe151b0419da76264be781) <br>
 ![jenkinssuccess][jenkinssuccess]
 
@@ -57,8 +59,7 @@ The Kubernetes cluster was composed of 2 VM's, containing 2 nodes each of the Ba
 A few intermediate steps require SSH'ing onto the JenkinsVM and declaring some environment variables, however this only has to be done once, or whenever these variables are changed.
 	
 ## Future Improvements
-The project as a whole was a failure and did not meet the MVP in a few regards. These are to follow;<br>
-- GIT Polling to Jenkins failed to connect, meaning automatic builds did not take place.
+The project as a whole was a failure and did not meet the MVP in a few regards. These are to follow; <br>
 - The tests when through a few issues, firstly it was not achieving full coverage, resulting in a fail, but still a successsful Jenkins build, secondly, failed to even run the tests due to a port binding conflict.
 - Server Error of 500 or 502. The Nginx failed to communicate with the frontend or backend.
 - There were a few "data breaches" resulting in condidential files being pushed to git, these being the database endpoints, username and passwords.
@@ -81,6 +82,7 @@ Kubernetes: https://kubernetes.io/ <br>
 
 I would also like to thank the QA Trainers and my fellow training colleagues for their help and support, as well as apologise for my shortcomings.
 
+[gitpoll]: https://i.gyazo.com/4fc026151802f69f598215076e334120.png
 [jenkinssuccess]: https://i.gyazo.com/625eac4e8ae4986d08c67c4bfab76c77.png
 [jenkinspipeline]: https://gyazo.com/c2d2dc949099565fc9c0de0a41739046
 [502error]: https://i.gyazo.com/f8d16ea04b0eeec5403a4944be7c832b.png
