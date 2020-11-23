@@ -10,7 +10,7 @@ pipeline{
         stages{
             stage('Testing'){
                 steps{
-                        sh 'chmod +x ./scripts/test_scripts.s'
+                        sh 'chmod +x ./scripts/test_scripts.sh'
                         sh './scripts/test_scripts.sh'
                         }
                 }
