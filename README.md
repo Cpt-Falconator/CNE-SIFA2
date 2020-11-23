@@ -37,6 +37,7 @@ Secondly, create an Ansible playbook that would provision the VM's with all of t
 From here, I planned to create a Jenkinsfile that would run split the task into it's stages, those being Testing, Uploading and Deploying.
 Once the tests have passed (_issue here_), it will then build the successful docker images and push them up onto dockerhub. Finally, it will access K8, and will deploy the application onto the cluster using the images that were built. (_issue here too_)
 
+![jenkinspipeline][jenkinspipeline]
 
 ### Jira Board
 The application was planned and executed alongside a Jira Kanban board, which helped keep track of all the functional requirements and gave a good understanding as to the progress towards MVP, as well as any fuether features and their coreleating priorities.
@@ -46,7 +47,8 @@ The application was planned and executed alongside a Jira Kanban board, which he
 ## CI Pipeline
 The application follows a Continous Integration Pipeline, meaning that any changes pushed to git will be automatically tested and (if successful) deploy the changes to the live server without disrupting the user experience.
 
-![jenkinspipeline][jenkinspipeline]
+(Gif of a jenkins build running : https://gyazo.com/7c964e30c7fe151b0419da76264be781)
+![jenkinssuccess][jenkinssuccess]
 
 The Kubernetes cluster was composed of 2 VM's, containing 2 nodes each of the Backend, Frontend (flask app) and nginx (Webpage) spread across them.
 
@@ -75,10 +77,11 @@ Terraform: https://www.terraform.io/ <br>
 Ansible: https://www.ansible.com/ <br>
 Kubernetes: https://kubernetes.io/ <br>
 
-I would also like to thank the QA Trainers and my fellow training colleagues for their help and support, as well as appologise for my shortcomings.
+I would also like to thank the QA Trainers and my fellow training colleagues for their help and support, as well as apologise for my shortcomings.
 
+[jenkinssuccess] : https://i.gyazo.com/625eac4e8ae4986d08c67c4bfab76c77.png
 [jenkinspipeline]: https://i.gyazo.com/c2d2dc949099565fc9c0de0a41739046.png
 [502error]: https://i.gyazo.com/f8d16ea04b0eeec5403a4944be7c832b.png
 [500error]: https://i.gyazo.com/5a97629c910fa4bad96a6e9b53ad9e5c.png
 [jiraboard]: https://i.gyazo.com/278b7d2874aa47fd08b8a6dea889797f.png
-[clustersetup]: temp.img
+[clustersetup]: https://i.gyazo.com/88e694e5d8a24c20f8f39d900104b9d0.png
