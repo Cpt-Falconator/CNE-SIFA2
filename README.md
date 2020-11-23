@@ -85,7 +85,7 @@ Terraform: https://www.terraform.io/ <br>
 Ansible: https://www.ansible.com/ <br>
 Kubernetes: https://kubernetes.io/ <br>
 
-I would also like to thank the QA Trainers and my fellow training colleagues for their help and support, as well as apologise for my shortcomings.
+I would also like to thank the QA Trainers and my fellow training colleagues for their help and support, as well as apologise for my shortcomings!
 
 [binderror]: https://i.gyazo.com/9629b14f9a3d7b57f8fe42e22dfeacce.png
 [gitpoll]: https://i.gyazo.com/4fc026151802f69f598215076e334120.png
