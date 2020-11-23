@@ -53,6 +53,8 @@ The application follows a Continous Integration Pipeline, meaning that any chang
 The Kubernetes cluster was composed of 2 VM's, containing 2 nodes each of the Backend, Frontend (flask app) and nginx (Webpage) spread across them.
 
 ![clustersetup][clustersetup]
+
+A few intermediate steps require SSH'ing onto the JenkinsVM and declaring some environment variables, however this only has to be done once, or whenever these variables are changed.
 	
 ## Future Improvements
 The project as a whole was a failure and did not meet the MVP in a few regards. These are to follow;<br>
