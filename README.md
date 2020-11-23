@@ -62,7 +62,7 @@ A few intermediate steps require SSH'ing onto the JenkinsVM and declaring some e
 The project as a whole was a failure and did not meet the MVP in a few regards. These are to follow; <br>
 - The tests when through a few issues, firstly it was not achieving full coverage, resulting in a fail, but still a successsful Jenkins build, secondly, failed to even run the tests due to a port binding conflict.
 <br>
-![binderror][binderror]
+ ![binderror][binderror]
 <br>
 - Server Error of 500 or 502. The Nginx failed to communicate with the frontend or backend.
 - There were a few "data breaches" resulting in condidential files being pushed to git, these being the database endpoints, username and passwords.
