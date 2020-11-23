@@ -1,9 +1,11 @@
 # SIFA2 Project
 
-## Repos
+## Repos & Jira
 Project Files: https://github.com/Cpt-Falconator/CNE-SIFA2 <br>
 Terraform Files: https://github.com/Cpt-Falconator/CNE-Second-Project/tree/Development <br>
 Misc Install Scripts: https://github.com/Cpt-Falconator/Install-scripts <br>
+<br>
+Jira Board: https://cptfalconator.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=SP&selectedIssue=SP-15 <br>
 ## Contents
 * [Brief](#brief)
 	* [Requirements](#requirements)
