@@ -47,7 +47,7 @@ The application was planned and executed alongside a Jira Kanban board, which he
 ## CI Pipeline
 The application follows a Continous Integration Pipeline, meaning that any changes pushed to git will be automatically tested and (if successful) deploy the changes to the live server without disrupting the user experience.
 
-(Gif of a jenkins build running : https://gyazo.com/7c964e30c7fe151b0419da76264be781)
+(Gif of a jenkins build running : https://gyazo.com/7c964e30c7fe151b0419da76264be781) <br>
 ![jenkinssuccess][jenkinssuccess]
 
 The Kubernetes cluster was composed of 2 VM's, containing 2 nodes each of the Backend, Frontend (flask app) and nginx (Webpage) spread across them.
@@ -79,8 +79,8 @@ Kubernetes: https://kubernetes.io/ <br>
 
 I would also like to thank the QA Trainers and my fellow training colleagues for their help and support, as well as apologise for my shortcomings.
 
-[jenkinssuccess] : https://i.gyazo.com/625eac4e8ae4986d08c67c4bfab76c77.png
-[jenkinspipeline]: https://i.gyazo.com/c2d2dc949099565fc9c0de0a41739046.png
+[jenkinssuccess]: https://i.gyazo.com/625eac4e8ae4986d08c67c4bfab76c77.png
+[jenkinspipeline]: https://gyazo.com/c2d2dc949099565fc9c0de0a41739046
 [502error]: https://i.gyazo.com/f8d16ea04b0eeec5403a4944be7c832b.png
 [500error]: https://i.gyazo.com/5a97629c910fa4bad96a6e9b53ad9e5c.png
 [jiraboard]: https://i.gyazo.com/278b7d2874aa47fd08b8a6dea889797f.png
